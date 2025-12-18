@@ -18,6 +18,10 @@ img {
     }
 }
 
+li {
+    text-transform: capitalize;
+}
+
 h1 {
     width: 90%;
     text-align: center;
