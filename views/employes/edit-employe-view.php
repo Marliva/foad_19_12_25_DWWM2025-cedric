@@ -35,7 +35,7 @@ require PATH_PROJET . '/views/partials/header.php';
             </div>
 
             <button type="submit" name="envoyer">Modifier</button>
-            <button type="reset" name="annuler">Annuler</button>
+            <button type="reset" name="annuler">Reset</button>
         </form>
 <?php
 include PATH_PROJET . '/views/partials/footer.php';
