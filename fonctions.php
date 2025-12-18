@@ -59,6 +59,24 @@ function getNbLigneTable($pdo, $table)
     return $count;
 }
 
+function getNbEmployesParSexe($pdo, $sexe)
+{
+    $sql = "SELECT COUNT(*) FROM employes WHERE sexe = :sexe";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        ':sexe' => $sexe
+    ]);
+    return $stmt->fetchColumn();
+}
+
+function getNbEmployesParService($pdo)
+{
+    $sql = "SELECT service, COUNT(*) AS nb FROM employes GROUP BY service";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
 // ================================================================
 // CRUD de employes
 // ================================================================
