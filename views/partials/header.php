@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="<?= WEB_ROOT ?>/assets/css/style.css">
     <title><?= $titleEntreprise ?></title>
+    <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
 </head>
 
 <body>

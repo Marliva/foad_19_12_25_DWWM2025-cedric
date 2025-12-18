@@ -9,7 +9,7 @@ if (count($employesArray) === 0) :
 endif;
 ?>
 <h1 style="text-align: center;">Liste des employés</h1>
-<table>
+<table class="sortable">
     <thead>
         <tr>
             <th>
@@ -65,6 +65,7 @@ endif;
         <?php endforeach; ?>
     </tbody>
 </table>
+<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.auto.min.js" defer></script>
 <div id="addButton">
     <a href="<?= WEB_ROOT . '/employes/add-employe.php' ?>"><button class="outline primary">Ajouter un employé</button></a>
 </div>
