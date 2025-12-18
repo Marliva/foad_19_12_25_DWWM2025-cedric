@@ -2,12 +2,12 @@
 
 ## Principe
 
-- Création d'une base de données Mysql avec utilisation phpmyadmin, d'une agence de taxis.
-- Trois tables (véhicules ; conducteurs et associations des deux).
+- Création d'une base de données Mysql avec utilisation phpmyadmin, de gestion des employés d'une entreprise.
+- Une table nommée "employes".
 - Mise en place du PDO pour connecter la base de données avec le projet PHP.
-- Création d'un dashboard avec indiqué dessus le nombre de véhicules et le nombre de conducteurs.
-- Views de la liste des véhicules et de la liste des conducteurs.
+- Création d'un dashboard avec indiqué dessus quelques statistiques des employés de l'entreprise.
 - Ajout de fonctions pour supprimer/ajouter/modifier des données de la base de données.
+- Views de la liste des employés, de la page d'ajout et de modification des employés.
 
 
 ## Arborescence de la structure du projet
