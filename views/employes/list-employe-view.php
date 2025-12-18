@@ -1,5 +1,5 @@
 <?php
-$titleEmployes = 'Liste des employés';
+$titleEntreprise = 'Liste des employés';
 require PATH_PROJET . '/views/partials/header.php';
 
 if (count($employesArray) === 0) :

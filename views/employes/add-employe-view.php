@@ -1,5 +1,5 @@
 <?php
-$titleEmployes = 'Ajouter un employé';
+$titleEntreprise = 'Ajouter un employé';
 require PATH_PROJET . '/views/partials/header.php';
 ?>
         <h1>Ajouter un employé</h1>
