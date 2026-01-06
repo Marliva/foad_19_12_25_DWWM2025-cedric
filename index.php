@@ -1,30 +1,12 @@
 <?php
-$titleEntreprise = 'Dashboard';
-include 'fonctions.php';
-require 'connexiondb.php';
+include "fonctions.php";
+require "connexiondb.php";
+require "routes.php";
 
-include PATH_PROJET . '/views/partials/header.php';
-?>
+$page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? 'home';
 
-<div id="title">
-    <h1 style="text-align: center;">Dashboard</h1>
-</div>
+if (!array_key_exists($page, $routes)) {
+    redirect('404.php');
+}
 
-<div id="stat">
-    <p>Nombre d'employés : <?= getNbLigneTable($pdo, 'employes') ?></p>
-    <p>Nombre d'hommes : <?= getNbEmployesParSexe($pdo, 'm') ?></p>
-    <p>Nombre de femmes : <?= getNbEmployesParSexe($pdo, 'f') ?></p>
-    <p>Nombre d'employés par service : </p>
-    <ul>
-        <?php
-        foreach (getNbEmployesParService($pdo) as $service) {
-            echo '<li>' . $service['service'] . ' : ' . $service['nb'] . '</li>';
-        }
-        ?>
-    </ul>
-
-</div>
-
-<?php
-include PATH_PROJET . '/views/partials/footer.php';
-?>
+redirect($routes[$page]);
