@@ -3,8 +3,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-define("PATH_PROJET", $_SERVER['DOCUMENT_ROOT'] . "/foad_19_12_25_DWWM2025-cedric");
-define("WEB_ROOT", "/foad_19_12_25_DWWM2025-cedric");
+define("PATH_PROJET", $_SERVER['DOCUMENT_ROOT'] . "/projet_entreprise");
+define("WEB_ROOT", "/projet_entreprise");
 
 function dg($data)
 {
